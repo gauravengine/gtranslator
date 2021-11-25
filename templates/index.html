@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Translator by supercow powers</title>
+</head>
+
+<body>
+  <div class="container">
+
+  
+  <h1>TRANSLATOR</h1>
+  <form method="get" action="/translate">
+
+    {% csrf_token %}
+
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">ENTER THE TEXT TO BE TRANSLATED BELOW</label>
+
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="xtext"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="exampleFormControlSelect1">Example select</label>
+      <select class="form-control" id="exampleFormControlSelect1" name="sel_lang">
+        <option>afrikaans</option>
+        <option>albanian</option>
+        <option>amharic</option>
+        <option>arabic</option>
+        <option>armenian</option>
+        <option>azerbaijani</option>
+        <option>basque</option>
+        <option>belarusian</option>
+        <option>bengali</option>
+        <option>bosnian</option>
+        <option>bulgarian</option>
+        <option>catalan</option>
+        <option>cebuano</option>
+        <option>chichewa</option>
+        <option>chinese (simplified)</option>
+        <option>chinese (traditional)</option>
+        <option>corsican</option>
+        <option>croatian</option>
+        <option>czech</option>
+        <option>danish</option>
+        <option>dutch</option>
+        <option>english</option>
+        <option>esperanto</option>
+        <option>estonian</option>
+        <option>filipino</option>
+        <option>finnish</option>
+        <option>french</option>
+        <option>frisian</option>
+        <option>galician</option>
+        <option>georgian</option>
+        <option>german</option>
+        <option>greek</option>
+        <option>gujarati</option>
+        <option>haitian creole</option>
+        <option>hausa</option>
+        <option>hawaiian</option>
+        <option>hebrew</option>
+        <option>hindi</option>
+        <option>hmong</option>
+        <option>hungarian</option>
+        <option>icelandic</option>
+        <option>igbo</option>
+        <option>indonesian</option>
+        <option>irish</option>
+        <option>italian</option>
+        <option>japanese</option>
+        <option>javanese</option>
+        <option>kannada</option>
+        <option>kazakh</option>
+        <option>khmer</option>
+        <option>korean</option>
+        <option>kurdish (kurmanji)</option>
+        <option>kyrgyz</option>
+        <option>lao</option>
+        <option>latin</option>
+        <option>latvian</option>
+        <option>lithuanian</option>
+        <option>luxembourgish</option>
+        <option>macedonian</option>
+        <option>malagasy</option>
+        <option>malay</option>
+        <option>malayalam</option>
+        <option>maltese</option>
+        <option>maori</option>
+        <option>marathi</option>
+        <option>mongolian</option>
+        <option>myanmar (burmese)</option>
+        <option>nepali</option>
+        <option>norwegian</option>
+        <option>odia</option>
+        <option>pashto</option>
+        <option>persian</option>
+        <option>polish</option>
+        <option>portuguese</option>
+        <option>punjabi</option>
+        <option>romanian</option>
+        <option>russian</option>
+        <option>samoan</option>
+        <option>scots gaelic</option>
+        <option>serbian</option>
+        <option>sesotho</option>
+        <option>shona</option>
+        <option>sindhi</option>
+        <option>sinhala</option>
+        <option>slovak</option>
+        <option>slovenian</option>
+        <option>somali</option>
+        <option>spanish</option>
+        <option>sundanese</option>
+        <option>swahili</option>
+        <option>swedish</option>
+        <option>tajik</option>
+        <option>tamil</option>
+        <option>telugu</option>
+        <option>thai</option>
+        <option>turkish</option>
+        <option>ukrainian</option>
+        <option>urdu</option>
+        <option>uyghur</option>
+        <option>uzbek</option>
+        <option>vietnamese</option>
+        <option>welsh</option>
+        <option>xhosa</option>
+        <option>yiddish</option>
+        <option>yoruba</option>
+        <option>zulu</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Translate</button>
+  </form>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  </div>
+</body>
+
+</html>
